@@ -63,6 +63,11 @@ html {
 
 .mt-16 {
     margin-top: 16px !important;
+
+}
+
+.mt-32 {
+    margin-top: 32px !important;
 }
 
 .row {
@@ -289,14 +294,7 @@ html {
 }
 
 #content .member-list {
-    margin-top: 48px;
-}
-
-#content .member-item {
-    /* float: left; */
-    /* width: calc(100% / 3); */
-    /* width: 33.33333%; */
-    text-align: center;
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -350,7 +348,7 @@ html {
 
 /* Places section */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
     /* margin: 32px -8px 48px; */
     /* padding-bottom: 48px; */
 }
