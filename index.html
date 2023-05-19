@@ -159,22 +159,22 @@
                 <div class="row contact-content">
                     <div class="col col-half s-col-full contact-info">
                         <p><i class="ti-location-pin"> Chicago, US</i></p>
-                        <p><i class="ti-mobile"> Phone: +00 151515</i></p>
-                        <p><i class="ti-email"> Email: mail@mail.com</i></p>
+                        <p><i class="ti-mobile"> Phone: <a href="tel:+00 151515">+00 151515</a></i></p>
+                        <p><i class="ti-email"> Email: <a href="mailto:mail@mail.com">mail@mail.com</a></i></p>
                     </div>
                     <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half s-col-full s-mt-8">
+                                <div class="col col-half s-col-full mt-8">
                                     <input type="text" name="" placeholder="Name" required id="" class="form-control">
                                 </div>
-                                <div class="col col-half s-col-full">
+                                <div class="col col-half s-col-full mt-8">
                                     <input type="email" name="" placeholder="Email" required id="" class="form-control">
                                 </div>
                                 <!-- div dính liền -->
                                 <!-- <div class="clear"></div> -->
                             </div>
-                            <div class="row mt-8 ">
+                            <div class="row mt-8">
                                 <div class="col col-full">
                                     <input type="text" name="" placeholder="Message" required id=""
                                         class="form-control">
@@ -209,6 +209,7 @@
 
     </div>
 
+    <!-- Begin : Button buy tickets -->
     <div class="modal js-modal">
         <div class="modal-container js-modal-container">
             <div class="modal-close js-modal-close">
@@ -223,13 +224,13 @@
                     <i class="ti-shopping-cart"></i>
                     Tickets, $15 per person
                 </label>
-                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
+                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?" required>
 
                 <label for="ticket-send" class="modal-label">
                     <i class="ti-user"></i>
                     Send To
                 </label>
-                <input id="ticket-send" type="email" class="modal-input" placeholder="Enter email">
+                <input id="ticket-send" type="email" class="modal-input" placeholder="Enter email" required>
 
                 <button id="buy-tickets">
                     Pay <i class="ti-check"></i>
@@ -272,7 +273,7 @@
         })
     </script>
 
-    
+
     <script>
         var header = document.getElementById('header');
         var mobileMenu = document.getElementById('mobile-menu');
