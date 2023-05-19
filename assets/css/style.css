@@ -105,21 +105,21 @@ html {
 
 /* Main */
 #main {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
 #header {
-    width: 100%;
-    height: 46.5px;
-    background-color: black;
+    /* width: 100%; */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    height: 46.5px;
+    background-color: #000;
     z-index: 1;
     /* Đóng các thẻ con dư thừa ra khỏi thẻ cha */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -130,6 +130,10 @@ html {
 
 #header .mobile-menu-btn:hover {
     background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
 }
 
 #header .mobile-menu-btn {
@@ -260,8 +264,8 @@ html {
     width: 800px;
     max-width: 100%;
     padding: 64px 0 112px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
 }
