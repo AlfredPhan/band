@@ -6,8 +6,17 @@
 
 /* Mobile */
 @media (max-width: 740px) {
+    .s-full-width {
+        width: 100% !important;
+
+    }
+
     .s-col-full {
-        width: 100%;
+        width: 100% !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
     }
 
     #nav {
@@ -27,7 +36,7 @@
     }
 
     #nav .subnav {
-        position: initial ;
+        position: initial;
         background-color: #333;
     }
 
@@ -58,5 +67,7 @@
         width: 60%;
     }
 
-
+    .contact-form {
+        margin-top: 16px;
+    }
 }

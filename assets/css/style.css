@@ -39,8 +39,9 @@ html {
     text-decoration: none;
     padding: 11px 16px;
     display: inline-block;
-    margin: 15px;
+    margin-top: 15px;
     border: none;
+    text-align: center;
 }
 
 .btn:hover {
