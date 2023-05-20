@@ -1,0 +1,76 @@
+// w3 school
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 10000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+//gpt
+#slideshow {
+  position: relative;
+  height: 300px;
+}
+
+.slideshow-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.slideshow-image:first-child {
+  display: block;
+}
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slideshow-image');
+const slideInterval = setInterval(nextSlide, 3000);
+
+function nextSlide() {
+  slides[currentSlide].style.display = 'none';
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].style.display = 'block';
+}
+const slideshowContainer = document.querySelector('#slideshow');
+
+slideshowContainer.addEventListener('mouseenter', () => {
+  clearInterval(slideInterval);
+});
+
+slideshowContainer.addEventListener('mouseleave', () => {
+  slideInterval = setInterval(nextSlide, 3000);
+});
+
