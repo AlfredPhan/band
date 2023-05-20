@@ -232,10 +232,12 @@ html {
     /* background-color: #fff;  */
     position: relative;
     margin-top: 46.5px;
-    padding-top: 50%;
+    /* padding-top: 50%; */
     /* link url -> background position -> background size -> background repeat  */
     /* 2 dấu chấm là nhảy ra khỏi file css đi thẳng vào img - đứng ngang hàng với css và img */
-    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
+    /* background: url('../img/slider/slider1.jpg') top center / cover no-repeat; */
+    /* background: url('../img/slider/slider2.jpg') top center / cover no-repeat; */
+    /* background: url('../img/slider/slider3.jpg') top center / cover no-repeat; */
 }
 
 #slider .text-content {

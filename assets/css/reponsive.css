@@ -96,6 +96,10 @@
         display: none;
     }
 
+    #slider .text-content {
+        display: none;
+    }
+
     #content .member-item {
         margin-top: 30px;
         width: 100%;
